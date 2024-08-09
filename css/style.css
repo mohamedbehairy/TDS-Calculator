@@ -1,0 +1,61 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: monospace;
+}
+
+body {
+  display: flex;
+  height: 100vh;
+  align-items: center;
+  justify-content: center;
+  background: #cbc8bc; /* Beige background */
+}
+
+.container {
+  position: relative;
+  max-width: 300px;
+  width: 100%;
+  padding: 10px 20px 20px;
+  background: #fff8dc; /* Cornsilk (light beige) background */
+  border-radius: 12px;
+  box-shadow: 0 5px 10px rgba(0, 0, 0, 0.05);
+}
+
+.buttons {
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  grid-gap: 10px;
+}
+
+.display {
+  height: 80px;
+  width: 100%;
+  margin-bottom: 10px;
+  font-size: 23px;
+  text-align: right;
+  border: none;
+  outline: none;
+  color: #4b3832; /* Dark brown text */
+  background: #fffaf0; /* Floral White (very light beige) */
+  pointer-events: none;
+}
+
+.buttons button {
+  padding: 12px 10px;
+  border-radius: 6px;
+  border: none;
+  cursor: pointer;
+  background: #d2b48c; /* Tan color for buttons */
+  font-size: 20px;
+  color: #4b3832; /* Dark brown text on buttons */
+}
+
+.buttons button:active {
+  transform: scale(0.99);
+}
+
+.operator {
+  color: #8b4513; /* SaddleBrown color for operators */
+}
